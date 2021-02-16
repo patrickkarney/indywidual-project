@@ -1,0 +1,32 @@
+.topbar{
+    min-height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: $paragraph-color;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 9;
+
+    .topbar-menu{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+
+        .topbar-cell{
+            height: 100%;
+            margin-right: 10px;
+            a{
+                font-size: 12px;
+                
+            }
+
+            img{
+                height: 15px;
+                width: 15px;
+            }
+        }
+    }
+}
