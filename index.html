@@ -6,9 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Just do it</title>
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="./vendor/icons">
 </head>
 <body>
      <!-- Sidebar -->
@@ -20,46 +21,73 @@
         <nav class="sidebar-nav">
             <ul class="sidebar-menu">
                 <li class="nav-list">
-                    <a class="nav-link active" href="#general"><img src="vendor/icons/general.svg" class="icon-general icon" alt="">General</a>
-                  </li>
-                  <li class="nav-list">
-                    <a class="nav-link" href="#details"><img src="vendor/icons/details.svg" class="icon-details icon" alt="">Details</a>
-                  </li>
-                  <li class="nav-list">
-                    <a class="nav-link" href="#links"><img src="vendor/icons/links.svg" class="icon-links icon" alt="">Links</a>
-                  </li>
-                  <li class="nav-list">
-                    <a class="nav-link" href="#banners"><img src="vendor/icons/banners.svg" class="icon-banners icon" alt="">Banners</a>
-                  </li>
-                  <li class="nav-list">
-                    <a class="nav-link" href="#personaldata"><img src="vendor/icons/personaldata.svg" class="icon-personaldata icon" alt="">Personal data</a>
-                  </li>
-                  <li class="nav-list">
-                    <a class="nav-link" href="#payout"><img src="vendor/icons/payout.svg" class="icon-payout icon" alt="">Payout</a>
-                  </li>
-                  <li class="nav-list">
-                    <a class="nav-link" href="#postback"><img src="vendor/icons/postback.svg" class="icon-postback icon" alt="">Postback</a>
-                  </li>
+                  <a class="nav-link" href="#general"><img src="vendor/icons/general.svg" class="icon-general icon" alt="">General</a>
+                </li>
+                <li class="nav-list">
+                  <a class="nav-link" href="#details"><img src="vendor/icons/details.svg" class="icon-details icon" alt="">Details</a>
+                </li>
+                <li class="nav-list">
+                  <a class="nav-link" href="#links"><img src="vendor/icons/links.svg" class="icon-links icon" alt="">Links</a>
+                </li>
+                <li class="nav-list">
+                  <a class="nav-link" href="#banners"><img src="vendor/icons/banners.svg" class="icon-banners icon" alt="">Banners</a>
+                </li>
+                <li class="nav-list">
+                  <a class="nav-link" href="#personaldata"><img src="vendor/icons/personaldata.svg" class="icon-personaldata icon" alt="">Personal data</a>
+                </li>
+                <li class="nav-list">
+                  <a class="nav-link" href="#payout"><img src="vendor/icons/payout.svg" class="icon-payout icon" alt="">Payout</a>
+                </li>
+                <li class="nav-list">
+                  <a class="nav-link" href="#postback"><img src="vendor/icons/postback.svg" class="icon-postback icon" alt="">Postback</a>
+                </li>
             </ul>
         </nav>
+        <br>
+        <div class="sidebar-manager">
+            <h3 class="sidebar-subtitle">YOUR MANAGER</h3>
+            <div class="manager-cell">
+                <img class="avatar" alt="">
+                <a class="avatar-name">Manager Name</a> 
+            </div>
+        </div>
     </aside>
     <!-- Topbar -->
-    <section class="topbar">
+    <nav class="topbar">
         <ul class="topbar-menu">
             <li class="topbar-list">
                 <a class="topbar-cell" href="#"><img src="vendor/icons/wallet.svg" class="icon-wallet icon-top" alt="">$1,500.00</a>
                 <a class="topbar-cell" href="#"><img src="vendor/icons/arrow-down.svg" class="icon-arrow-down icon-top" alt=""></a>
             </li>
-            <li class="topbar_list">
+            <li class="topbar-list">
                 <a class="topbar-cell" href="#"><img src="vendor/icons/notification.svg" class="icon-notification icon-top" alt=""></a>
             </li>
-            <li class="topbar_list">
-                <a class="topbar-cell" href="#"><img src="vendor/icons/profile.svg" class="icon-profile icon-top" alt=""></a>
+            <li class="topbar-list">
+                <a class="topbar-cell" href="#"><img src="vendor/icons/profile.svg" class="icon-profile icon-top" alt="">Leonardo Dicaprio</a>
             </li>
-            <li class="topbar_list">
+            <li class="topbar-list">
                 <a class="topbar-cell" href="#"><img src="vendor/icons/quit.svg" class="icon-quit icon-top" alt=""></a>
             </li>
         </ul>
+    </nav>
+    <!-- Content container -->
+    <section class="container">
+      <div class="container-title-wrapper ">
+        <h3 class="container-title">GENERAL STATISTICS</h3>
+      </div>
+      <div class="container-wrapper">
+        <div class="container-content-wrapper">
+          <form class="date-form">
+            <div class="date-picker">
+              <input type="text" name="date">
+              <input type="text" name="date">
+            </div>
+            <button id="btn-refresh" class="btn btn-refresh"><img src="vendor/icons/refresh.svg" class="icon-refresh"></button>
+          </form>
+        </div>
+      </div>
+
+
     </section>
 
 </body>

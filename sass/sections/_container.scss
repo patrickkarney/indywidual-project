@@ -1,0 +1,28 @@
+.container{
+    background-color: $paragraph-color;
+    width: 80%;
+    float: right;
+    margin: 70px 20px 20px 250px;
+    height: 1024px;
+    border-radius: 0.6%;
+}
+
+.container-title-wrapper{
+    padding: 20px;
+    border-bottom:  solid $text-color-light 0.5px;
+}
+
+.container-title{
+    margin: 0 auto;
+}
+
+.container-wrapper{
+    border-bottom:  solid $text-color-light 0.5px;
+}
+
+.container-content-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}

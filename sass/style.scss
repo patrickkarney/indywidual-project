@@ -5,10 +5,14 @@
 @import "layout";
 
 /* Components */
+@import "components/general";
+@import "components/dateForm";
+@import "components/btn";
 
 /* Sections */
 @import "sections/sidebar";
 @import "sections/topbar";
+@import "sections/container";
 
 /* Pages / Views */
 //@import "pages/registration";
