@@ -71,7 +71,7 @@
         </ul>
     </nav>
     <!-- Content container -->
-    <section class="container">
+    <section class="container general">
       <div class="container-title-wrapper ">
         <h3 class="container-title">GENERAL STATISTICS</h3>
       </div>
@@ -79,11 +79,73 @@
         <div class="container-content-wrapper">
           <form class="date-form">
             <div class="date-picker">
-              <input type="text" name="date">
-              <input type="text" name="date">
+              <input type="text" name="date" class="date-start">
+              <input type="text" name="date" class="date-end">
             </div>
             <button id="btn-refresh" class="btn btn-refresh"><img src="vendor/icons/refresh.svg" class="icon-refresh"></button>
           </form>
+        </div>
+      </div>
+
+      <div class="container-wrapper container-stats">
+        <div class="container-content-wrapper">
+          <div class="chart-stats">
+            <div class="column col-1">
+              <div class="row row-1">
+                <a class="row-text">Visit Signups</a>
+                <a class="value">221</a>
+              </div>
+              <div class="row row-2">
+                <a class="row-text">FTD</a>
+                <a class="value">445</a>
+              </div>
+            </div>
+            <div class="column col-2">
+              <div class="row row-1">
+                <a class="row-text">Net deposit</a>
+                <a class="value">564</a>
+              </div>
+              <div class="row row-2">
+                <a class="row-text">Turn over</a>
+                <a class="value">432</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrapper container-chart">
+        <div class="container-content-wrapper">
+          <div class="chart">
+
+            <div class="chart-title">
+              <div class="column col-1">
+                <div class="row row-chart-title">
+                  <a class="row-text">Earning chart</a>
+                </div>
+              </div>
+              <div class="column col-1">
+                <div class="row row-chart-title">
+                  <a class="row-text"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="chart-legend">
+              <div class="legend-item legend-signups">
+                <span class="dot dot-blue"></span>
+                <a class="legend-text">Signups</a>
+              </div>
+              <div class="legend-item legend-signups">
+                <span class="dot dot-orange"></span>
+                <a class="legend-text">FTD</a>
+              </div>
+              <div class="legend-item legend-signups">
+                <span class="dot dot-green"></span>
+                <a class="legend-text">Earned</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

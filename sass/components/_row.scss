@@ -1,0 +1,20 @@
+.row{
+    margin: 20px;
+    min-width: 200px;
+    border-bottom: solid $text-color-light 0.5px;
+    display: flex;
+    justify-content: space-between;
+
+    a{
+        font-size: 18px;
+    }
+}
+
+.row-text{
+    color: $row-text-color;
+    font-size: 18px;
+}
+
+.row-chart-title{
+    border-bottom: none;
+}

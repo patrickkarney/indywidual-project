@@ -1,0 +1,18 @@
+.dot {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.dot-blue{
+    background-color: $dot-blue;
+}
+
+.dot-orange{
+    background-color: $dot-orange;
+}
+
+.dot-green{
+    background-color: $dot-green;
+}

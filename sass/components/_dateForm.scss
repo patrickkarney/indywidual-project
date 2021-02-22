@@ -1,5 +1,16 @@
 .date-form{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
+}
+
+.date-start{
+    margin-right: 0px;
+}
+
+.date-end{
+    margin-left: 0px;
+    background-image: url('.../vendor/icons/calendar.svg');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
 }
