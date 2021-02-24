@@ -342,6 +342,7 @@ template {
 
 body {
   background-color: #cce3f7;
+  position: relative;
 }
 
 /* Components */
@@ -521,6 +522,22 @@ body {
   cursor: pointer;
 }
 
+.burger-nav {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .burger-nav {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .burger-nav {
+    display: inline-block;
+  }
+}
+
 .topbar {
   min-height: 50px;
   width: 100%;
@@ -567,12 +584,25 @@ body {
   border-left: solid #cce3f7 0.5px;
 }
 
+@media (max-width: 767px) {
+  .topbar {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .topbar {
+    display: none;
+  }
+}
+
 .container {
   background-color: #fff;
   width: 80%;
-  float: right;
+  position: absolute;
   margin: 70px 20px 20px 250px;
-  height: 1024px;
+  right: 20px;
+  left: 0px;
   border-radius: 0.6%;
   filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.3));
 }
