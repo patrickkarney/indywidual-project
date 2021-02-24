@@ -530,6 +530,12 @@ body {
   .burger-nav {
     display: inline-block;
   }
+  .sidebar-menu {
+    transform: translateX(100%);
+  }
+  .fa-bars:focus ~ .sidebar-menu {
+    transform: translateX(0);
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
