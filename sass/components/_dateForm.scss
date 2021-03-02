@@ -2,15 +2,22 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    
+}
+
+.date-picker{
+    padding: 5px;
+    border: solid $text-color-light 0.2px;
 }
 
 .date-start{
     margin-right: 0px;
+    border: none;
+    border-right: solid $text-color-light 0.2px;
 }
 
 .date-end{
     margin-left: 0px;
-    background-image: url('.../vendor/icons/calendar.svg');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
+    border: none;
 }
+

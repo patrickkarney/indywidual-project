@@ -1,0 +1,45 @@
+.links{
+    top: 700px;
+    margin: 70px 20px 20px 250px;
+    border-radius: 0.6%;
+
+    .link-list{
+        width: 70%;
+    }
+}
+
+.links-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+
+.link{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    transition: 0.5s;
+    
+    i{
+        display: none;
+    }
+}
+
+.link-name{
+    font-size: $paragraph-font-size;
+    font-family: $paragraph-font;
+}
+
+.link:hover{ 
+    background-color: $text-color-light;
+    i{
+        display: inline-block;
+    }
+}
+
+.link i:hover{
+    cursor: pointer;
+    color: $dot-orange;
+}
