@@ -21,3 +21,10 @@
     border: none;
 }
 
+@media (max-width: 767px){
+    .date-picker input{
+        font-size: 8px;
+    }
+    
+}
+

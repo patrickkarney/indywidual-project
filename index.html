@@ -18,7 +18,7 @@
             <h2 class="logo">Just do it</h2>
             <button class="btn-sidebar"><i class="fa fa-bars"></i></button>
         </div>
-        <nav class="sidebar-nav">
+        <nav id="sidebar-nav" class="sidebar-nav">
             <ul class="sidebar-menu">
                 <li class="nav-list">
                   <i class="icon-general icon" alt=""></i><a class="nav-link" href="#general">General</a>
@@ -84,159 +84,161 @@
             </li>
         </ul>
     </nav>
-    <!-- Content container -->
-
-    <section class="container general">
-      <div class="container-title-wrapper ">
-        <h3 class="container-title">GENERAL STATISTICS</h3>
-      </div>
-      <div class="container-wrapper">
-        <div class="container-content-wrapper">
-          <form class="date-form">
-            <div class="date-picker">
-              <input type="text" name="date" class="date-start">
-              <input type="text" name="date" class="date-end">
-            </div>
-            <button id="btn-refresh" class="btn btn-refresh"><img src="vendor/icons/refresh.svg" class="icon-refresh"></button>
-          </form>
+    <!-- MAIN CONTENT -->
+    <main>
+      <section class="general page">
+        <div class="container-title-wrapper ">
+          <h3 class="container-title">GENERAL STATISTICS</h3>
         </div>
-      </div>
-
-      <div class="container-wrapper container-stats">
-        <div class="container-content-wrapper">
-          <div class="chart-stats">
-            <div class="column col-1">
-              <div class="row row-1">
-                <a class="row-text">Visit Signups</a>
-                <a class="value">221</a>
+        <div class="container-wrapper">
+          <div class="container-content-wrapper">
+            <form class="date-form">
+              <div class="date-picker">
+                <input type="text" name="date" class="date-start">
+                <input type="text" name="date" class="date-end">
               </div>
-              <div class="row row-2">
-                <a class="row-text">FTD</a>
-                <a class="value">445</a>
+              <button id="btn-refresh" class="btn btn-refresh"><img src="vendor/icons/refresh.svg" class="icon-refresh"></button>
+            </form>
+          </div>
+        </div>
+  
+        <div class="container-wrapper container-stats">
+          <div class="container-content-wrapper">
+            <div class="chart-stats">
+              <div class="column col-1">
+                <div class="row row-1">
+                  <a class="row-text">Visit Signups</a>
+                  <a class="value">221</a>
+                </div>
+                <div class="row row-2">
+                  <a class="row-text">FTD</a>
+                  <a class="value">445</a>
+                </div>
+                <div class="row row-chart-title">
+                  <a class="row-text">Earning chart</a>
+                </div>
               </div>
-              <div class="row row-chart-title">
-                <a class="row-text">Earning chart</a>
+              <div class="column col-2">
+                <div class="row row-1">
+                  <a class="row-text">Net deposit</a>
+                  <a class="value">564</a>
+                </div>
+                <div class="row row-2">
+                  <a class="row-text">Turn over</a>
+                  <a class="value">432</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+  
+        <div class="container-wrapper container-chart">
+          <div class="container-content-wrapper">
+            <div class="chart">
+  
+  
+              <div class="chart-legend">
+                <div class="legend-item legend-signups">
+                  <span class="dot dot-blue"></span>
+                  <a class="legend-text">Signups</a>
+                </div>
+                <div class="legend-item legend-signups">
+                  <span class="dot dot-orange"></span>
+                  <a class="legend-text">FTD</a>
+                </div>
+                <div class="legend-item legend-signups">
+                  <span class="dot dot-green"></span>
+                  <a class="legend-text">Earned</a>
+                </div>
+              </div>
+              <div class="chart-img">
+                <img src="images/chart-img.jpg">
               </div>
             </div>
-            <div class="column col-2">
-              <div class="row row-1">
-                <a class="row-text">Net deposit</a>
-                <a class="value">564</a>
-              </div>
-              <div class="row row-2">
-                <a class="row-text">Turn over</a>
-                <a class="value">432</a>
-              </div>
+          </div>
+        </div>
+      </section>
+  
+      <!--Links-->
+  
+      <section class="links page">
+        <div class="container-title-wrapper ">
+          <h3 class="container-title">LINKS</h3>
+        </div>
+        <div class="container-wrapper">
+          <button id="button-add" class="btn btn-add">+ Add new</button>
+          <div class="container-content-wrapper links-wrapper">
+            <div class="link-list">
+              <ul>
+                <li class="link row">
+                  <span class="link-name">Google</span>
+                  <a href='https://www.google.com/?gws_rd=ssl'>https://www.google.com/?gws_rd=ssl</a>
+                  <div class="links-icons-wrapper">
+                    <i class="icon-links" alt=""></i>
+                    <i class="icon-trash" alt=""></i>
+                  </div>
+                </li>
+                <li class="link row">
+                  <span class="link-name">Google</span>
+                  <a href='https://www.google.com/?gws_rd=ssl'>https://www.google.com/?gws_rd=ssl</a>
+                  <div class="links-icons-wrapper">
+                    <i class="icon-links" alt=""></i>
+                    <i class="icon-trash" alt=""></i>
+                  </div>
+                </li>
+                <li class="link row">
+                  <span class="link-name">Google</span>
+                  <a href='https://www.google.com/?gws_rd=ssl'>https://www.google.com/?gws_rd=ssl</a>
+                  <div class="links-icons-wrapper">
+                    <i class="icon-links" alt=""></i>
+                    <i class="icon-trash" alt=""></i>
+                  </div>
+                </li>
+                <li class="link row">
+                  <span class="link-name">Google</span>
+                  <a href='https://www.google.com/?gws_rd=ssl'>https://www.google.com/?gws_rd=ssl</a>
+                  <div class="links-icons-wrapper">
+                    <i class="icon-links" alt=""></i>
+                    <i class="icon-trash" alt=""></i>
+                  </div>
+                </li>
+                <li class="link row">
+                  <span class="link-name">Google</span>
+                  <a href='https://www.google.com/?gws_rd=ssl'>https://www.google.com/?gws_rd=ssl</a>
+                  <div class="links-icons-wrapper">
+                    <i class="icon-links" alt=""></i>
+                    <i class="icon-trash" alt=""></i>
+                  </div>
+                </li>
+                <li class="link row">
+                  <span class="link-name">Google</span>
+                  <a href='https://www.google.com/?gws_rd=ssl'>https://www.google.com/?gws_rd=ssl</a>
+                  <div class="links-icons-wrapper">
+                    <i class="icon-links" alt=""></i>
+                    <i class="icon-trash" alt=""></i>
+                  </div>
+                </li>
+                <li class="link row">
+                  <span class="link-name">Google</span>
+                  <a href='https://www.google.com/?gws_rd=ssl'>https://www.google.com/?gws_rd=ssl</a>
+                  <div class="links-icons-wrapper">
+                    <i class="icon-links" alt=""></i>
+                    <i class="icon-trash" alt=""></i>
+                  </div>
+                </li>
+              </ul>
             </div>
             
+  
           </div>
+          <button id="button-add" class="btn btn-add">+ Add new</button>
         </div>
-      </div>
-
-      <div class="container-wrapper container-chart">
-        <div class="container-content-wrapper">
-          <div class="chart">
+  
+      </section>
+    </main>
 
 
-            <div class="chart-legend">
-              <div class="legend-item legend-signups">
-                <span class="dot dot-blue"></span>
-                <a class="legend-text">Signups</a>
-              </div>
-              <div class="legend-item legend-signups">
-                <span class="dot dot-orange"></span>
-                <a class="legend-text">FTD</a>
-              </div>
-              <div class="legend-item legend-signups">
-                <span class="dot dot-green"></span>
-                <a class="legend-text">Earned</a>
-              </div>
-            </div>
-            <div class="chart-img">
-              <img src="images/chart-img.jpg">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Links-->
-
-    <section class="container links">
-      <div class="container-title-wrapper ">
-        <h3 class="container-title">LINKS</h3>
-      </div>
-      <div class="container-wrapper">
-        <button id="button-add" class="btn btn-add">+ Add new</button>
-        <div class="container-content-wrapper links-wrapper">
-          <div class="link-list">
-            <ul>
-              <li class="link row">
-                <span class="link-name">Google</span>
-                <a href='https://www.google.com/?gws_rd=ssl'>https://www.google.com/?gws_rd=ssl</a>
-                <div class="links-icons-wrapper">
-                  <i class="icon-links" alt=""></i>
-                  <i class="icon-trash" alt=""></i>
-                </div>
-              </li>
-              <li class="link row">
-                <span class="link-name">Google</span>
-                <a href='https://www.google.com/?gws_rd=ssl'>https://www.google.com/?gws_rd=ssl</a>
-                <div class="links-icons-wrapper">
-                  <i class="icon-links" alt=""></i>
-                  <i class="icon-trash" alt=""></i>
-                </div>
-              </li>
-              <li class="link row">
-                <span class="link-name">Google</span>
-                <a href='https://www.google.com/?gws_rd=ssl'>https://www.google.com/?gws_rd=ssl</a>
-                <div class="links-icons-wrapper">
-                  <i class="icon-links" alt=""></i>
-                  <i class="icon-trash" alt=""></i>
-                </div>
-              </li>
-              <li class="link row">
-                <span class="link-name">Google</span>
-                <a href='https://www.google.com/?gws_rd=ssl'>https://www.google.com/?gws_rd=ssl</a>
-                <div class="links-icons-wrapper">
-                  <i class="icon-links" alt=""></i>
-                  <i class="icon-trash" alt=""></i>
-                </div>
-              </li>
-              <li class="link row">
-                <span class="link-name">Google</span>
-                <a href='https://www.google.com/?gws_rd=ssl'>https://www.google.com/?gws_rd=ssl</a>
-                <div class="links-icons-wrapper">
-                  <i class="icon-links" alt=""></i>
-                  <i class="icon-trash" alt=""></i>
-                </div>
-              </li>
-              <li class="link row">
-                <span class="link-name">Google</span>
-                <a href='https://www.google.com/?gws_rd=ssl'>https://www.google.com/?gws_rd=ssl</a>
-                <div class="links-icons-wrapper">
-                  <i class="icon-links" alt=""></i>
-                  <i class="icon-trash" alt=""></i>
-                </div>
-              </li>
-              <li class="link row">
-                <span class="link-name">Google</span>
-                <a href='https://www.google.com/?gws_rd=ssl'>https://www.google.com/?gws_rd=ssl</a>
-                <div class="links-icons-wrapper">
-                  <i class="icon-links" alt=""></i>
-                  <i class="icon-trash" alt=""></i>
-                </div>
-              </li>
-            </ul>
-          </div>
-          
-
-        </div>
-        <button id="button-add" class="btn btn-add">+ Add new</button>
-      </div>
-
-    </section>
-
-
-
+    <script src="js/script.js" type="module"></script>
 </body>
+</html>

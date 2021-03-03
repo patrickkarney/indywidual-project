@@ -1,12 +1,15 @@
-.container{
+main {
+    width: calc(100% - 230px);
+    margin-left: 230px;
+    margin-top: 70px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main .page {
     background-color: $paragraph-color;
-    width: 80%;
-    position: absolute;
-    margin: 70px 20px 20px 250px;
-    right: 20px;
-    left: 0px;
-    border-radius: 0.6%;
-    filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.3));
+    box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
 }
 
 .container-title-wrapper{
@@ -35,12 +38,10 @@
 
 @media (max-width: 767px){
 
-    .container{
-        margin: 70px 20px 20px 20px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
+    main {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 90px;
     }
 }
 
