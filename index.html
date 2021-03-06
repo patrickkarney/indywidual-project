@@ -12,47 +12,60 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!--Modals-->
+    <div class="overlay" id="overlay">
+      <div class="modal" id="myModal">
+        <div class="btn-close js--close-modal">x</div>
+    
+        <h4>Witaj w modalu!</h4>
+        <p>Lorem ipsum dolor sit amet...</p>
+    
+        <button class="js--close-modal">Okay</button>
+      </div>
+    </div>
+    
      <!-- Sidebar -->
-    <aside class="sidebar" data-role="sidebar">
+    <aside id="sidebar" class="sidebar" data-role="sidebar">
         <div class="sidebar-header">
             <h2 class="logo">Just do it</h2>
             <button class="btn-sidebar"><i class="fa fa-bars"></i></button>
         </div>
         <nav id="sidebar-nav" class="sidebar-nav">
             <ul class="sidebar-menu">
-                <li class="nav-list">
-                  <i class="icon-general icon" alt=""></i><a class="nav-link" href="#general">General</a>
-                </li>
-                <li class="nav-list">
-                  <i class="icon-details icon" alt=""></i><a class="nav-link" href="#details">Details</a>
-                </li>
-                <li class="nav-list">
-                  <i class="icon-links icon" alt=""></i><a class="nav-link" href="#links">Links</a>
-                </li>
-                <li class="nav-list">
-                  <i class="icon-banners icon" alt=""></i><a class="nav-link" href="#banners">Banners</a>
-                </li>
-                <li class="nav-list">
-                  <i class="icon-personaldata icon" alt=""></i><a class="nav-link" href="#personaldata">Personal data</a>
-                </li>
-                <li class="nav-list">
-                  <i class="icon-payout icon" alt=""></i><a class="nav-link" href="#payout">Payout</a>
-                </li>
-                <li class="nav-list">
-                  <i class="icon-postback icon" alt=""></i><a class="nav-link" href="#postback">Postback</a>
-                </li>
-                <li class="burger-nav nav-list">
-                  <i class="icon-wallet icon-top" alt=""></i><a class="nav-link" href="#"></i>$1,500.00</a>
-                  <i class="icon-arrow-down icon-top" alt=""></i><a class="nav-link" href="#"></a>
+              <li class="nav-list"  href="#general">
+                <i class="icon-general icon" alt=""></i><a class="nav-link">General</a>
+              </li>
+              <li class="nav-list" href="#details">
+                <i class="icon-details icon" alt=""></i><a class="nav-link" >Details</a>
+              </li>
+              <li class="nav-list" href="#links">
+                <i class="icon-links icon" alt=""></i><a class="nav-link" >Links</a>
+              </li>
+              <li class="nav-list" href="#banners">
+                <i class="icon-banners icon" alt=""></i><a class="nav-link" >Banners</a>
+              </li>
+              <li class="nav-list" href="#personaldata">
+                <i class="icon-personaldata icon" alt=""></i><a class="nav-link" >Personal data</a>
+              </li>
+              <li class="nav-list" href="#payout">
+                <i class="icon-payout icon" alt=""></i><a class="nav-link" >Payout</a>
+              </li>
+              <li class="nav-list" href="#postback">
+                <i class="icon-postback icon" alt=""></i><a class="nav-link" >Postback</a>
               </li>
               <li class="burger-nav nav-list">
-                <i class="icon-notification icon-top" alt=""></i><a class="nav-link" href="#"></a>
+                <i class="icon-wallet icon-top" alt=""></i><a class="nav-link"></i>$1,500.00</a>
+                <i class="icon-arrow-down icon-top" alt="" href="#"></i><a class="nav-link" ></a>
+              </li>
+              <li class="burger-nav nav-list">
+                <i class="icon-notification icon-top" alt="" href="#"></i><a class="nav-link" ></a>
               </li>
               <li class="burger-nav nav-list">
                 <i class="icon-profile icon-top" alt=""></i><a class="nav-link" href="#">Leonardo Dicaprio</a>
               </li>
               <li class="burger-nav nav-list">
-                <i class="icon-quit icon-top" alt=""></i><a class="nav-link" href="#"></a>
+                <i class="icon-quit icon-top" alt="" href="#"></i><a class="nav-link" ></a>
               </li>
             </ul>
         </nav>
@@ -136,25 +149,7 @@
         <div class="container-wrapper container-chart">
           <div class="container-content-wrapper">
             <div class="chart">
-  
-  
-              <div class="chart-legend">
-                <div class="legend-item legend-signups">
-                  <span class="dot dot-blue"></span>
-                  <a class="legend-text">Signups</a>
-                </div>
-                <div class="legend-item legend-signups">
-                  <span class="dot dot-orange"></span>
-                  <a class="legend-text">FTD</a>
-                </div>
-                <div class="legend-item legend-signups">
-                  <span class="dot dot-green"></span>
-                  <a class="legend-text">Earned</a>
-                </div>
-              </div>
-              <div class="chart-img">
-                <img src="images/chart-img.jpg">
-              </div>
+              <canvas id="myChart"></canvas>
             </div>
           </div>
         </div>
@@ -238,7 +233,7 @@
       </section>
     </main>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js" type="module"></script>
 </body>
 </html>

@@ -539,14 +539,22 @@ body {
 .btn-sidebar {
   background-color: #0074D9;
   border: none;
+  display: none;
 }
 
 .btn-sidebar i {
   color: #cce3f7;
+  z-index: 99999;
 }
 
 .btn-sidebar:hover {
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .btn-sidebar {
+    display: inline-block;
+  }
 }
 
 .chart-stats {
@@ -657,6 +665,17 @@ body {
   color: #f38d08;
 }
 
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.scroll-wrapper img {
+  width: auto;
+  max-width: 100%;
+}
+
 /* Sections */
 .sidebar {
   position: fixed;
@@ -670,6 +689,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #cce3f7;
   font-size: 16px;
+  transition: 0.5s;
 }
 
 .sidebar .sidebar-header {
@@ -708,6 +728,7 @@ body {
   padding-top: 5px;
   padding-left: 20px;
   padding-right: 20px;
+  z-index: 11;
 }
 
 .sidebar ul.sidebar-menu .nav-list a {
@@ -754,6 +775,7 @@ body {
   .sidebar {
     overflow: hidden;
     width: 100%;
+    height: 60px;
   }
   .sidebar .sidebar-header {
     width: 100%;
@@ -772,17 +794,23 @@ body {
   .burger-nav {
     display: inline-block;
   }
-  .sidebar-nav {
-    display: none;
-  }
-  .sidebar-manager {
-    display: none;
+  .sidebar ul.sidebar-menu .nav-list {
+    margin: 0;
+    width: 100%;
+    height: 20px;
+    font-size: 10px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .burger-nav {
     display: inline-block;
+  }
+  .sidebar {
+    overflow: scroll;
+  }
+  .sidebar::-webkit-scrollbar {
+    display: none;
   }
 }
 
@@ -890,6 +918,57 @@ main .page {
     margin-left: 0px;
     margin-top: 90px;
   }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  overflow: auto;
+  padding: 30px;
+  display: none;
+}
+
+.overlay.show {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overlay::webkit-scrollbar {
+  display: none;
+}
+
+.modal {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  position: relative;
+  padding: 30px;
+  display: none;
+  z-index: 998;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
 }
 
 /* Pages / Views */

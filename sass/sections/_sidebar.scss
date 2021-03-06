@@ -10,6 +10,7 @@
     font-family: $paragraph-font;
     color: $text-color-light;
     font-size: 16px;
+    transition: 0.5s;
     
 
     .sidebar-header{
@@ -42,6 +43,7 @@
             padding-top: 5px;
             padding-left: 20px;
             padding-right: 20px;
+            z-index: 11;
 
             a{
                 text-decoration: none;
@@ -90,6 +92,7 @@
     .sidebar{
         overflow: hidden;
         width: 100%;
+        height: 60px;
     }
 
     .sidebar .sidebar-header{
@@ -114,16 +117,12 @@
         display: inline-block;
     }
 
-    .sidebar-nav{
-        display: none;
+    .sidebar ul.sidebar-menu .nav-list{
+        margin: 0;
+        width: 100%;
+        height: 20px;
+        font-size: 10px;
     }
-    
-    
-    .sidebar-manager{
-        display: none;
-    }
-
-    
 
 }
 
@@ -131,4 +130,12 @@
     .burger-nav{
         display: inline-block;
     }
+
+    .sidebar{
+        overflow: scroll;
+    }
+
+    .sidebar::-webkit-scrollbar {
+        display: none;
+      }
 }

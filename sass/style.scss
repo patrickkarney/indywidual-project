@@ -15,11 +15,13 @@
 @import "components/chart";
 @import "components/dot";
 @import "components/links";
+@import "components/scrollWrapper";
 
 /* Sections */
 @import "sections/sidebar";
 @import "sections/topbar";
 @import "sections/main";
+@import "sections/modal";
 
 /* Pages / Views */
 //@import "pages/registration";
