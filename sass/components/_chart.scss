@@ -1,9 +1,18 @@
-.chart-title{
-    display: flex;
-    justify-content: space-between;
+.chart{
+    width: 500px;
+    height: 400px;
 }
 
-.chart-legend{
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 768px) and (max-width: 991px){
+    .chart{
+        max-width: 350px;
+        max-height: 225px;
+    } 
+}
+
+@media (max-width: 767px){
+    .chart{
+        max-width: 250px;
+        max-height: 150px;
+    } 
 }

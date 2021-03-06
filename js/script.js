@@ -8,7 +8,7 @@ function burgerToggle() {
     burgerElement.addEventListener('click', function(event){
         event.preventDefault();
         if(sidebarList.style.height === '60px'){
-            sidebarList.style.height = '100%';
+            sidebarList.style.height = '80%';
         }
         else{
             sidebarList.style.height = '60px';
@@ -16,39 +16,6 @@ function burgerToggle() {
     })
 }
 
-function closeModal() {
-    document.getElementById('overlay').classList.remove('show')
-  }
-
-document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
-    btn.addEventListener('click', function(e) {
-        e.preventDefault()
-        closeModal()
-    })
-})
-
-document.querySelector('#overlay').addEventListener('click', function(e) {
-    if(e.target === this) {
-      closeModal()
-    }
-  })
-
-  document.addEventListener('keyup', function(e) {
-    if(e.keyCode === 27) {
-      closeModal()
-    }
-  })
-
-  function openModal(modal) {
-    document.querySelectorAll('#overlay > *').forEach(function(modal) {
-      modal.classList.remove('show')
-    })
-    document.querySelector('#overlay').classList.add('show')
-    document.querySelector(modal).classList.add('show')
-  }
-
-
-openModal (myModal);
 burgerToggle();
 
 var ctx = document.getElementById('myChart').getContext('2d');
@@ -85,3 +52,35 @@ var chart = new Chart(ctx, {
         }]
     },
 });
+
+function closeModal() {
+    document.getElementById('overlay').classList.remove('show')
+  }
+
+document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+        e.preventDefault()
+        closeModal()
+    })
+})
+
+document.querySelector('#overlay').addEventListener('click', function(e) {
+    if(e.target === this) {
+      closeModal()
+    }
+  })
+
+  document.addEventListener('keyup', function(e) {
+    if(e.keyCode === 27) {
+      closeModal()
+    }
+  })
+
+  function openModal(modal) {
+    document.querySelectorAll('#overlay > *').forEach(function(modal) {
+      modal.classList.remove('show')
+    })
+    document.querySelector('#overlay').classList.add('show')
+    document.querySelector(modal).classList.add('show')
+  }
+
