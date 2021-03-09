@@ -540,6 +540,7 @@ body {
   background-color: #0074D9;
   border: none;
   display: none;
+  outline: none;
 }
 
 .btn-sidebar i {
@@ -548,6 +549,24 @@ body {
 }
 
 .btn-sidebar:hover {
+  cursor: pointer;
+}
+
+.btn-modal {
+  position: fixed;
+  right: 0;
+  bottom: 100px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #0074D9;
+  color: #cce3f7;
+}
+
+.btn-modal:hover {
+  background-color: #f38d08;
   cursor: pointer;
 }
 
@@ -810,6 +829,9 @@ body {
     overflow: hidden;
     width: 100%;
     height: 60px;
+  }
+  .mobile {
+    height: 80%;
   }
   .sidebar .sidebar-header {
     width: 100%;

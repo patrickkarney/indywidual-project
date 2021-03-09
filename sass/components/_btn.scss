@@ -30,7 +30,7 @@
     background-color: $brand-main-color;
     border: none;
     display: none;
-    
+    outline: none;
 
     i{
         color: $text-color-light;
@@ -39,6 +39,24 @@
 }
 
 .btn-sidebar:hover{
+    cursor: pointer;
+}
+
+.btn-modal{
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: $brand-main-color;
+    color: $text-color-light;
+}
+
+.btn-modal:hover{
+    background-color: $dot-orange;
     cursor: pointer;
 }
 

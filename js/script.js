@@ -7,11 +7,11 @@ function burgerToggle() {
     //add eventlistener to burger
     burgerElement.addEventListener('click', function(event){
         event.preventDefault();
-        if(sidebarList.style.height === '60px'){
-            sidebarList.style.height = '80%';
+        if(sidebarList.classList.contains('mobile')){
+            sidebarList.classList.remove('mobile');
         }
         else{
-            sidebarList.style.height = '60px';
+            sidebarList.classList.add('mobile');
         }
     })
 }
@@ -84,3 +84,9 @@ document.querySelector('#overlay').addEventListener('click', function(e) {
     document.querySelector(modal).classList.add('show')
   }
 
+  const modalButton = document.querySelector('.btn-modal');
+  modalButton.addEventListener('click', function(event){
+    event.preventDefault();
+    openModal('#myModal');
+  })
+  
