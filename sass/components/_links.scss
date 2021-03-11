@@ -1,9 +1,8 @@
 
 
-.link-list{
-    width: 70%;
+.link-list ul{
+    padding-left: 0;
 }
-
 
 .links-wrapper{
     display: flex;
@@ -12,7 +11,10 @@
 }
 
 
+
+
 .link{
+    margin-left: 0px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -20,23 +22,30 @@
     transition: 0.5s;
     
     i{
-        display: none;
+        color: $paragraph-color;
     }
 }
 
 .link-name{
     font-size: $paragraph-font-size;
     font-family: $paragraph-font;
+    margin-right: 10px;
 }
 
 .link:hover{ 
     background-color: $text-color-light;
     i{
-        display: inline-block;
+        color: $row-text-color;
     }
 }
 
 .link i:hover{
     cursor: pointer;
     color: $dot-orange;
+}
+
+@media (max-width: 767px){
+    .link a{
+        font-size: 12px;
+    }
 }

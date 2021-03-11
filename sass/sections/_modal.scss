@@ -36,7 +36,6 @@
     position: relative;
     padding: 30px;
     display: none;
-    z-index: 998;
   }
 
   .modal.show {
@@ -48,4 +47,22 @@
     top: 0;
     right: 0;
     padding: 5px 10px;
+  }
+
+  .email-input{
+    margin: 10px 5px 10px 5px;
+    border: none;
+    border-bottom: solid $text-color-light 0.5px;
+    display: flex;
+    justify-content: space-between;
+    outline: none;
+  }
+
+  .message-input{
+    margin: 10px 5px 10px 5px;
+    border: none;
+    border-bottom: solid $text-color-light 0.5px;
+    display: flex;
+    justify-content: space-between;
+    outline: none;
   }

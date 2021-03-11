@@ -671,8 +671,8 @@ body {
   background-color: #09c409;
 }
 
-.link-list {
-  width: 70%;
+.link-list ul {
+  padding-left: 0;
 }
 
 .links-wrapper {
@@ -684,6 +684,7 @@ body {
 }
 
 .link {
+  margin-left: 0px;
   width: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -694,12 +695,13 @@ body {
 }
 
 .link i {
-  display: none;
+  color: #fff;
 }
 
 .link-name {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+  margin-right: 10px;
 }
 
 .link:hover {
@@ -707,12 +709,18 @@ body {
 }
 
 .link:hover i {
-  display: inline-block;
+  color: #75818b;
 }
 
 .link i:hover {
   cursor: pointer;
   color: #f38d08;
+}
+
+@media (max-width: 767px) {
+  .link a {
+    font-size: 12px;
+  }
 }
 
 .scroll-wrapper {
@@ -812,6 +820,18 @@ body {
   margin: auto;
   -ms-flex-align: center;
       align-items: center;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.manager-cell .online-dot {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: #09c409;
+  top: 5px;
+  left: 30px;
+  border-radius: 50%;
 }
 
 .manager-cell a {
@@ -826,12 +846,12 @@ body {
 
 @media (max-width: 767px) {
   .sidebar {
-    overflow: hidden;
+    overflow: scroll;
     width: 100%;
     height: 60px;
   }
   .mobile {
-    height: 80%;
+    height: 65%;
   }
   .sidebar .sidebar-header {
     width: 100%;
@@ -1013,7 +1033,6 @@ main .page {
   position: relative;
   padding: 30px;
   display: none;
-  z-index: 998;
 }
 
 .modal.show {
@@ -1025,6 +1044,28 @@ main .page {
   top: 0;
   right: 0;
   padding: 5px 10px;
+}
+
+.email-input {
+  margin: 10px 5px 10px 5px;
+  border: none;
+  border-bottom: solid #cce3f7 0.5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  outline: none;
+}
+
+.message-input {
+  margin: 10px 5px 10px 5px;
+  border: none;
+  border-bottom: solid #cce3f7 0.5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  outline: none;
 }
 
 /* Pages / Views */
